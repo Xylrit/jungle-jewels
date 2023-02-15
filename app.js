@@ -32,3 +32,10 @@ dropbtn.addEventListener("click", function(){
 document.getElementById("inquireBtn").onclick = function () {
 	location.href = "contact.html";
 }
+
+let allImages = document.querySelectorAll("img");
+allImages.forEach((value)=>{
+    value.oncontextmenu = (e)=>{
+        e.preventDefault();
+    }
+})

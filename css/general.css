@@ -34,4 +34,8 @@ ul{
 	list-style: none;
 }
 
+img {
+	pointer-events: none;
+}
+
 
