@@ -1,0 +1,78 @@
+footer{
+	width: 100%;
+	background-color: var(--accentGreen);
+	font-family: 'Cormorant Garamond';
+}
+
+.footer-section a:hover{
+	border-bottom: 1.8px solid ;
+	transition: all ease .10s;
+}
+
+.footer-section a{
+	border-bottom: none;
+	transition: all ease .15s;
+}
+
+.footer-container{
+	color: white;
+	padding: 2rem 3.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5em;
+	
+}
+
+.footer-section h3{
+	font-size: 1.3rem;
+	border-bottom: 2px solid #046D39;
+	display: inline;
+}
+
+.footer-section ul li{
+padding: .5rem 0;
+font-size: 1.1rem;
+color: #f7f7f7;
+}
+
+.logo{
+	max-width: 4em;
+	margin-right: 1em;
+}
+.logo-name{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 1em;
+}
+.--footer-main{
+	max-width: 12rem;
+}
+.footer-contacts-icon img{
+	max-width: 1.7em;
+}
+.footer-contacts-icon{
+	display: flex;
+	padding: .7em 0;
+	align-items: center;
+}
+
+.footer-contacts-icon p{
+	font-family: 'Roboto';
+	font-size: .8rem;
+	margin-left: .5em;
+}
+
+.copyright{
+	background-color: #046D39;
+	color: white;
+	display: flex;
+	padding: .5em 2em;
+}
+.copyright .right{
+	margin-left: auto;
+}
+
+.footer-container a:link, .footer-container a:hover, .footer-container a:active, .footer-container a:visited{
+	color: white;
+}

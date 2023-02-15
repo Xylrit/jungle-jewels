@@ -1,0 +1,37 @@
+:root{
+	--accentGreen: #39B54A;
+	--accentGray: #272d29;
+	--white: #FFFFFF;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+body{
+	margin: 0 0 0 0;
+	padding: 80px 0 0 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+a:active {
+  text-decoration: underline;
+}
+
+
+ul{
+	list-style: none;
+}
+
+

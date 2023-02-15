@@ -1,0 +1,81 @@
+.contact-section{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 40% 1fr;
+}
+
+.contact-form h1{
+	font-family: 'Cormorant Garamond';
+	font-size: clamp(3.5rem, 1.625rem + 6vw, 5rem);
+}
+
+.contact-image{
+	object-fit:cover;
+	height: 100%;
+	max-width: 100%;
+	object-position: 30%;
+}
+@media screen and (max-width:820px) {
+	.contact-section{
+		background-color: white;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.contact-form h1, .contact-form p{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width:820px){
+	.contact-image{
+		content: url('/background images/N_0072.jpg');
+		height: 25vh;
+		width: 100%;
+		object-fit:cover;
+	}
+}
+.contact-form{
+	padding: 10%;
+}
+
+.contact-info{
+	display: grid;
+}
+
+input, textarea{
+	width: 100%;
+	border-color: var(--accentGreen);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+}
+
+.name, .email, .phone, .message{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-family:'Roboto';
+	font-weight: 400;
+	font-size: 15px;
+}
+
+input{
+	padding: 5px;
+}
+
+.send-email-btn{
+	padding: 12px;
+	background-color: var(--accentGreen);
+	border-width: 0;
+	color: white;
+	border-radius: 6px;
+	word-wrap: break-word;
+	justify-self: center;
+  width: 100%;
+  max-width: 280px;
+}
