@@ -17,12 +17,7 @@
 	font-weight: 500;
 }
 
-.sub-header{
-	margin-top: 2em;
-	position: absolute;
-	top: 35%;
-	left: 10%;
-}
+
 
 .sub-header-text{
 	color: white;
@@ -54,6 +49,7 @@
 
 
 .hero-page{
+	overflow: hidden;
 	max-width: 100%;
 	position: relative;
 	/* background: url('/background images/HeroPage3.jpg');
@@ -66,107 +62,14 @@
 
 .hero-image{
 	max-width: 100%;
-	
+	scale: 100%;
 	z-index: -1;
 	object-fit: cover;
-	object-position:100% -10em;
+	object-position:100% -9em;
 }
-
-@media screen and (max-width: 768px){
-
-	.header{
-		position: absolute;
-		top: 5%;
-		left: 0; 
-		right: 0; 
-		margin-left: auto; 
-		margin-right: auto; 
-		text-align: center;
-	}
-
-	.hero-page{
-		width: 100%;
-		height: 100%;
-	}
-
-	.hero-image{
-		height: 115vh;
-		z-index: -1;
-		object-fit: cover;
-		object-position: 60% -5em;
-	}
-}
-
-@media screen and (max-width: 500px){
-
-	.header{
-		position: absolute;
-		top: 5%;
-		left: 0; 
-		right: 0; 
-		margin-left: auto; 
-		margin-right: auto; 
-		text-align: center;
-	}
-
-	.hero-page{
-		width: 100%;
-		height: 100%;
-	}
-
-	.hero-image{
-		height: 90vh;
-		z-index: -1;
-		object-fit: cover;
-		object-position: 64% -2em;
-	}
-
-	.sub-header{
-		padding: 0 1.25em;
-		margin: 0;
-		position: static;
-		top: 35%;
-		left: 10%;
-	}
-
-	.sub-header-text{
-		color: var(--accentGray);
-	}
-
-	.inquire-button{
-		display: block;
-		margin: 1em auto;
-	}
-}
-
-@media screen and (max-width: 280px){
-
-	.hero-image{
-		min-height: 100%;
-		width: 200%;
-		z-index: -1;
-		object-fit: cover;
-		object-position:100%;
-	}
-
-	.hero-page{
-	}
-	.sub-header-text{
-		color: var(--accentGray);
-	}
-	.header h1{
-		font-size:2rem;
-	}
-}
-
-/* .hero-page-content{
-	max-width: 700px;
-	color: white;
+.sub-header{
 	position: absolute;
-} */
-
-
-
+}
 
 .--center-text{
 	text-align: center;
@@ -207,31 +110,40 @@ section{
 	background-color: #f7f7f7;
 }
 
-.reptile-image{
-	display: block;
-	max-width: 100%;
-}
-
-.frog-image-container img{
-	object-fit:cover;
-	max-width: 100%;
-  height: auto;
-}
-
-.frog-section-content{
+.frogs{
 	color: white;
 }
 
-.bird-image{
-	object-fit:cover;
-	width: 100%;
-  height: auto;
+.content{
+	font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+}
+
+.content{
+	flex-basis: 100%;
+}
+
+.--content-center{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	max-width: 600px;
+}
+
+.image-container img{
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.image-container{
+	flex-basis: 100%;
 }
 
 .about-us-info-container{
 	display: flex;
 	flex-direction: row;
 }
+
+/* About us Media Queries */
 
 @media screen and (max-width: 768px){
 	.about-us-info-container{
@@ -261,5 +173,141 @@ section{
 
 .about-us-info img{
 	max-width: 100%;
+}
+
+/* HomePage Media Queries */
+
+@media screen and (width > 1000px){
+	.sub-header{
+		margin-top: 2em;
+		position: absolute;
+		top: 35%;
+		left: 10%;
+	}
+}
+@media screen and (max-width: 1000px) and (width>768px){
+	.sub-header{
+		padding: 0 1.25em;
+		margin: 0;
+		top: 50%;
+		left: 10%;
+	}
+}
+
+@media screen and (max-width: 1000px){
+
+	.hero-page{
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero-image{
+		height: 120vh;
+		z-index: -1;
+		object-fit: cover;
+		object-position: 60% -5em;
+	}
+
+}
+@media screen and (width<830px) and (width >768px){
+	.hero-image{
+		height: 100vh;
+		object-position: 60% -3em;
+	}
+	.header{
+		position: absolute;
+		top: 5%;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+		text-align: center;
+	}
+	.sub-header{
+		top: 56%;
+		left: 6%;
+	}
+	.sub-header-text{
+		font-size: 1.15rem;
+		max-width: 350px;
+	}
+}
+@media screen and (max-width: 768px){
+
+	.header{
+		position: absolute;
+		top: 5%;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+		text-align: center;
+	}
+
+	.hero-page{
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero-image{
+		height: 100vh;
+		z-index: -1;
+		object-fit: cover;
+		object-position: 60% -3em;
+	}
+
+	.sub-header{
+		position: relative;
+		
+	}
+	.sub-header-text{
+		max-width: 100%;
+		color: var(--accentGray);
+	}
+}
+
+@media screen and (max-width: 560px){
+	section{
+		padding: 2rem 3rem;
+	}
+
+	.header{
+		position: absolute;
+		top: 5%;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+		text-align: center;
+	}
+
+	.hero-page{
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero-image{
+		scale: 100%;
+		height: 90vh;
+		z-index: -1;
+		object-fit: cover;
+		object-position: 64% 100%;
+	}
+
+	.sub-header{
+		margin-top: 12%;
+		padding: 0 3em;
+		position: relative;
+	}
+
+	.sub-header-text{
+		max-width: 100%;
+		color: var(--accentGray);
+	}
+
+	.inquire-button{
+		display: block;
+		margin: 1em auto;
+	}
 }
 

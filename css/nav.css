@@ -22,6 +22,8 @@
 	.dropdown-container{
 		font-size: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
 	}
+
+	/* Dropdown Queries */
 	@media screen and (min-width:820px){
 		.dropdown:hover .dropdown-content {
 			display: block;
@@ -101,6 +103,7 @@
 		border-radius: 4px;
 	}
 
+	/* Nav Media Queries */
 	@media screen and (max-width: 820px){
 		i{
 			margin-top: auto;
