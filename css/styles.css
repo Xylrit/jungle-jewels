@@ -27,8 +27,8 @@
 .--link-green{
 	color: var(--accentGreen);
 }
-.--link-white{
-	color: var(--accentGreen);
+.--link-gray{
+	color: var(--accentGray);
 }
 
 .header{
@@ -135,9 +135,11 @@ section{
 .bg-gray{
 	background-color: #f7f7f7;
 }
-
-.frogs a, .frogs a:active{
+.frogs{
 	color: white;
+}
+.frogs a, .frogs a:active{
+	color: var(--accentGray);
 	
 }
 
@@ -150,19 +152,18 @@ section{
 	display: grid;
 }
 
-.--content-center{
+.--text-center{
 	justify-self: left;
 	align-self: center;
 	max-width: 600px;
 	margin: 0;
 }
 
-.--content-center h1,.--content-center p {
+.--text-center h1,.--text-center p {
 	margin-bottom: 30px;
-	color: var(--accentGray);
 }
 
-.--content-center h1 {
+.--text-center h1 {
 	font-size: 3.5rem;
 }
 
@@ -300,12 +301,17 @@ section{
 
 	.sub-header{
 		position: relative;
-		
+		padding: 0 2em;
 	}
 	.sub-header-text{
 		max-width: 100%;
 		color: var(--accentGray);
 	}
+	.inquire-button{
+		display: block;
+    margin: 1em auto;
+	}
+	
 }
 
 @media screen and (max-width: 560px){
@@ -337,7 +343,7 @@ section{
 	}
 
 	.sub-header{
-		margin-top: 12%;
+		margin-top: 9%;
 		padding: 0 3em;
 		position: relative;
 	}

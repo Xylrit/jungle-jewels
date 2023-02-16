@@ -24,7 +24,17 @@ img{
 	padding-bottom: .5em;
 }
 .content{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Cormorant Garamond';
+	
+}
+
+.content p{
 	font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+	font-weight: 700;
+	line-height: 1.4;
 }
 
 .content{
@@ -34,6 +44,10 @@ img{
 .flex-placeholder img{
 	object-fit: cover;
 	max-width: 100%;
+}
+
+.--white-text{
+	color:white;
 }
 
 .--two-images{
@@ -69,9 +83,6 @@ img{
 .overlap-grid img{
 	object-fit: cover;
 }
-
-
-
 
 .overlap-1{
 	object-fit: cover;
@@ -112,4 +123,30 @@ img{
 	grid-column-end: 6;
 	grid-row-start: 3;
 	grid-row-end: 5;
+}
+
+.four-flex-layout{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.four-flex-layout > div{
+	flex: 50%;
+	padding: 1em;
+}
+
+@media screen and (width<768px){
+	.four-flex-layout{
+		flex-direction: column;
+	}
+	
+}
+
+.long-image{
+	max-height: 110vh;
+
+}
+
+.long-image img{
+	height: 100%;
 }
