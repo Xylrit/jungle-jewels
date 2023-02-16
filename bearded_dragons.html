@@ -15,6 +15,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 	<title>Bearded Dragons</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NM7HXFJTE7');
+</script>
 <body>
 
 	<div class="nav-container">
@@ -33,17 +42,16 @@
 
 			<ul class="nav-menu" id="nav-menu">
 				<li><a href="index.html" class="nav-links">Home</a></li>
-				<li><a href="#" class="nav-links">About Us</a></li>
 				<li class="dropdown-container">
 					<div class="dropdown">
 						<div class="dropbtn nav-links">Animals
-							<i class="fa fa-caret-down"></i>
+							<i class="fa-solid fa-chevron-right"></i>
 						</div>
 						<div class="dropdown-content">
-							<a href="chameleons.html">Chameleons</a>
-							<a href="bearded_dragons.html">Bearded Dragons</a>
-							<a href="frogs.html">Frogs</a>
-							<a href="birds.html">Birds</a>
+							<a class="nav-links" href="chameleons.html">Chameleons</a>
+							<a class="nav-links" href="bearded_dragons.html">Bearded Dragons</a>
+							<a class="nav-links" href="frogs.html">Frogs</a>
+							<a class="nav-links" href="birds.html">Birds</a>
 						</div>
 					</div></li>
 				<li><a href="#" class="nav-links">News</a></li>
