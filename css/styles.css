@@ -5,6 +5,31 @@
 	font-family: 'Cormorant Garamond';
 }
 
+.home-link{
+	font-size: 1.35rem;
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.home-link:link {
+  text-decoration:underline;
+}
+
+.home-link:visited {
+  text-decoration: none;
+}
+
+
+.home-link:active {
+  text-decoration: underline;
+}
+
+.--link-green{
+	color: var(--accentGreen);
+}
+.--link-white{
+	color: var(--accentGreen);
+}
 
 .header{
 	position: absolute;
@@ -66,6 +91,7 @@
 	z-index: -1;
 	object-fit: cover;
 	object-position:100% -9em;
+
 }
 .sub-header{
 	position: absolute;
@@ -110,8 +136,9 @@ section{
 	background-color: #f7f7f7;
 }
 
-.frogs{
+.frogs a, .frogs a:active{
 	color: white;
+	
 }
 
 .content{
@@ -120,21 +147,33 @@ section{
 
 .content{
 	flex-basis: 100%;
+	display: grid;
 }
 
 .--content-center{
-	display: grid;
-	justify-content: center;
-	align-items: center;
+	justify-self: left;
+	align-self: center;
 	max-width: 600px;
+	margin: 0;
+}
+
+.--content-center h1,.--content-center p {
+	margin-bottom: 30px;
+	color: var(--accentGray);
+}
+
+.--content-center h1 {
+	font-size: 3.5rem;
 }
 
 .image-container img{
 	object-fit: cover;
 	max-width: 100%;
+	border-radius: 8px;
 }
 
 .image-container{
+	overflow: hidden;
 	flex-basis: 100%;
 }
 
@@ -178,6 +217,9 @@ section{
 /* HomePage Media Queries */
 
 @media screen and (width > 1000px){
+	.hero-image{
+		margin-bottom: -9em;
+	}
 	.sub-header{
 		margin-top: 2em;
 		position: absolute;
