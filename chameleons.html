@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chameleons</title>
-	<link rel="shortcut icon" href="Icons/JJ logo final.png" type="image/png">
+	<link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/form.css">
@@ -15,6 +15,18 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<script src="app.js"></script>
+	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+		$.get("components/nav.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+		});
+		$.get("components/footer.html", function(data){
+				$("#footer-placeholder").replaceWith(data);
+		});
+		</script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"></script>
@@ -26,48 +38,16 @@
   gtag('config', 'G-NM7HXFJTE7');
 </script>
 <body>
-	<div class="nav-container">
-		<nav class="nav-bar">
-			
-			<div id="navbar-logo">
-				<img src="Icons\JJ logo final.png" alt="Logo" class="logo">
-				<h2 class="brand-name">Jungel Jewels</h2>
-			</div>
+	<div id="nav-placeholder"></div>
 
-			<div class="menu-toggle" id="mobile-menu">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-
-			<ul class="nav-menu" id="nav-menu">
-				<li><a href="index.html" class="nav-links">Home</a></li>
-				<li class="dropdown-container">
-					<div class="dropdown">
-						<div class="dropbtn nav-links">Animals
-							<i class="fa-solid fa-chevron-right"></i>
-						</div>
-						<div class="dropdown-content">
-							<a class="nav-links" href="chameleons.html">Chameleons</a>
-							<a class="nav-links" href="bearded_dragons.html">Bearded Dragons</a>
-							<a class="nav-links" href="frogs.html">Frogs</a>
-							<a class="nav-links" href="birds.html">Gouldian Finches</a>
-							<a class="nav-links" href="rainbow loris.html">Rainbow Loris</a>
-						</div>
-					</div></li>
-				<!-- <li><a href="#" class="nav-links">News</a></li> -->
-				<li><a href="contact.html" class="nav-links">Contact</a></li>
-			</ul>
-
-		</nav>
-	</div>
 	<header class="page-name --center-text">Chameleons</header>
+
 	<section class="bg-white">
 		<div	class="split">
-			<div class="flex-placeholder"><img src="Wojtek Homepage\Pix reptiles\chameleons\1.jpg" alt="">
-				
+			<div class="flex-placeholder"><img src="images-watermark/chameleons/1.jpg" alt="veiled chameleon">
 			</div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\Pix reptiles\chameleons\2.jpg" alt=""></div>
+			<div class="flex-placeholder"><img src="images-watermark/chameleons/2.jpg" alt="panther chameleon">
+			</div>
 		</div>
 	</section>
 
@@ -83,7 +63,7 @@
 	<section class="bg-white">
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\3.jpg" alt="">
+				<img src="images-watermark/chameleons/3.jpg" alt="chameleon">
 			</div>
 			<div class="content">
 				<p>These mostly arboreal living reptiles use their tail as a 5th limb, which helps them maneuvering through branches and twigs. 
@@ -97,7 +77,7 @@
 	<section class="bg-gray">
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\3.1.1.jpg" alt="">
+				<img src="images-watermark/chameleons/3.1.1.jpg" alt="chamelon habitat">
 			</div>
 			<div class="content">
 				<p>This is how chameleons are kept at JungleJewels. Outdoor all year round, with natural sunlight and automatic misting system. 
@@ -121,7 +101,7 @@
 			</div>
 
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\4.jpg" alt="">
+				<img src="images-watermark/chameleons/4.jpg" alt="veiled chameleon">
 			</div>
 			
 		</div>
@@ -135,7 +115,7 @@
 				<p>When stressed, their color can turn dark brown. They turn pastel or dull if relaxed or no rivals or mates in sight.</p>
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\6.jpg" alt="">
+				<img src="images-watermark/chameleons/6.jpg" alt="chameleon">
 			</div>
 			
 		</div>
@@ -162,7 +142,7 @@
 				<p>Temperatures should reach between 25-35℃, up to 40℃ in the basking spot. Night temps may be lower to 18℃. Humidity is recommended at around 70%, with 2-3 misting periods daily. </p>
 			</div>
 			<div class="flex-placeholder long-image">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\7.jpg" alt="">
+				<img src="images-watermark/chameleons/7.jpg" alt="chameleons">
 			</div>
 		</div>
 	</section>
@@ -176,13 +156,13 @@
 			</div>
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\8.jpg" alt="">
+				<img src="images-watermark/chameleons/8.jpg" alt="panther chameleon">
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\9.jpg" alt="">
+				<img src="images-watermark/chameleons/9.jpg" alt="panther chameleon">
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\chameleons\10.jpg" alt="">
+				<img src="images-watermark/chameleons/10.jpg" alt="panther chameleon">
 			</div>
 			
 		</div>
@@ -194,15 +174,15 @@
 				<p style="margin: 2em;">With approximately 50cm for males and 40cm for females, Panthers stay a bit smaller than Veiled chameleons.</p>
 				<div>
 					<div class="flex-placeholder">
-						<img src="Wojtek Homepage\Pix reptiles\chameleons\12.jpg" alt="">
+						<img src="images-watermark/chameleons/12.jpg" alt="panther chameleon">
 					</div>
 					<div class="flex-placeholder">
-						<img src="Wojtek Homepage\Pix reptiles\chameleons\13.jpg" alt="">
+						<img src="images-watermark/chameleons/13.jpg" alt="panther chameleon">
 					</div>
 				</div>
 			</div>
 			<div class="flex-placeholder long-image">
-				<img class="" src="Wojtek Homepage\Pix reptiles\chameleons\11.jpg" alt="">
+				<img src="images-watermark/chameleons/11.jpg" alt="panther chameleon">
 			</div>
 		</div>
 	</section>
@@ -221,46 +201,7 @@
 		</div>
 	</section>
 
-	<footer>
+	<div id="footer-placeholder"></div>
 
-		<div class="footer-container">
-			<div class="footer-section --footer-main">
-				<div class="logo-name">
-					<img src="Icons/JJ logo final.png" alt="Logo" class="logo">
-					<h2 class="brand-name">JungleJewels</h3>
-				</div>
-				<p>
-					For more than 30 years keeping and breeding of exotic animals has been our passion. Located in Leyte, Philippines, we take full advantage of the local climate and keep our reptiles and birds outdoor all year round, where they enjoy natural sun light and seasonal changes of temperature and rainfall.
-			</div>
-			<div class="footer-section --footer-browse">
-				<h3>Browse</h3>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<!-- <li><a href="">About Us</a></li> -->
-					<li><a href="contact.html">Contact</a></li>
-					<!-- <li><a href="">News</a></li> -->
-				</ul>
-			</div>
-			<div class="footer-section --footer-animals">
-				<h3>Animals</h3>
-				<ul>
-					<li><a href="chameleons.html">Chameleons</a></li>
-					<li><a href="bearded_dragons.html">Bearded Dragons</a></li>
-					<li><a href="frogs.html">Frogs</a></li>
-					<li><a href="birds.html">Gouldian Finches</a></li>
-					<li><a href="rainbow loris.html">Rainbow Loris</a></li>
-				</ul>
-			</div>
-			<div class="footer-section --footer-contacts ">
-				<h3>Contact</h3>
-				<div class="footer-contacts-icon"><img src="Icons/Facebook_Icon.svg" alt=""> <a style="font-family: 'Roboto'; margin-left:.5rem; font-size: .9rem;" href="https://www.facebook.com/jj.poisonfrogger" target=”_blank”>JJtim</a></div>
-				<div class="footer-contacts-icon"><img src="Icons/Email_Icon.svg" alt=""> <p>junglejewelsfarm@gmail.com</p></div>
-			</div>
-		</div>
-		<div class="copyright"> <p class="left">@Copyright 2023</p>	<p class="right">Privacy Policy</p></div>
-	</footer>
-
-	<script src="app.js"></script>
-	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
 </body>
 </html>

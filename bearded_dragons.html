@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="Icons/JJ logo final.png" type="image/png">
+	<link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/form.css">
@@ -15,6 +15,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 	<title>Bearded Dragons</title>
+
+	<script src="app.js"></script>
+	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+		$.get("components/nav.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+		});
+		$.get("components/footer.html", function(data){
+				$("#footer-placeholder").replaceWith(data);
+		});
+		</script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"></script>
@@ -24,51 +36,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-NM7HXFJTE7');
-</script>
+</script>jpg
 <body>
 
-	<div class="nav-container">
-		<nav class="nav-bar">
-			
-			<div id="navbar-logo">
-				<img src="Icons\JJ logo final.png" alt="Logo" class="logo">
-				<h2 class="brand-name">Jungel Jewels</h2>
-			</div>
-
-			<div class="menu-toggle" id="mobile-menu">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-
-			<ul class="nav-menu" id="nav-menu">
-				<li><a href="index.html" class="nav-links">Home</a></li>
-				<li class="dropdown-container">
-					<div class="dropdown">
-						<div class="dropbtn nav-links">Animals
-							<i class="fa-solid fa-chevron-right"></i>
-						</div>
-						<div class="dropdown-content">
-							<a class="nav-links" href="chameleons.html">Chameleons</a>
-							<a class="nav-links" href="bearded_dragons.html">Bearded Dragons</a>
-							<a class="nav-links" href="frogs.html">Frogs</a>
-							<a class="nav-links" href="birds.html">Gouldian Finches</a>
-							<a class="nav-links" href="rainbow loris.html">Rainbow Loris</a>
-						</div>
-					</div></li>
-				<!-- <li><a href="#" class="nav-links">News</a></li> -->
-				<li><a href="contact.html" class="nav-links">Contact</a></li>
-			</ul>
-
-		</nav>
-	</div>
+	<div id="nav-placeholder"></div>
 
 	<header class="page-name --center-text">Bearded Dragons</header>
 
 	<section class="bg-white">
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\beardeddragon\pic15.jpg" alt="">
+				<img src="images-watermark/bearded-dragons/pic15.jpg" alt="beader dragon">
 			</div>
 			<div class="content">
 				<p>Bearded dragons (Pogona vitticeps) are ideal animals for beginners in reptile care. They look jurasic, have a mellow temper, become used to their keeper quickly and are not difficult to keep. </p>	
@@ -86,27 +64,25 @@
 				</p>
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\beardeddragon\pic16.jpg" alt="">
+				<img src="images-watermark/bearded-dragons/pic16.jpg" alt="beader dragon">
 			</div>
 		</div>
 	</section>
 
 	<section class="bg-white">
 		<div class="split --image-line">
-			<div class="flex-placeholder"><img src="Wojtek Homepage\Pix reptiles\beardeddragon\pic17.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\Pix reptiles\beardeddragon\pic18.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\Pix reptiles\beardeddragon\pic19.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\Pix reptiles\beardeddragon\pic20.jpg" alt=""></div>
+			<div class="flex-placeholder"><img src="images-watermark/bearded-dragons/pic17.jpg" alt="beader dragon"></div>
+			<div class="flex-placeholder"><img src="images-watermark/bearded-dragons/pic18.jpg" alt="beader dragon"></div>
+			<div class="flex-placeholder"><img src="images-watermark/bearded-dragons/pic19.jpg" alt="beader dragon"></div>
+			<div class="flex-placeholder"><img src="images-watermark/bearded-dragons/pic20.jpg" alt="beader dragon"></div>
 		</div>
 	</section>
-
-	
 
 	<section class="bg-white">
 		<header class="page-name">Captive Care</header>
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\beardeddragon\DragonCage2.jpg" alt="">
+				<img src="images-watermark/bearded-dragons/DragonCage2.jpg" alt="bearded dragon habitat">
 			</div>
 			<div class="content">
 				<p>Originating from dry desert and savannah areas in Australia, bearded dragons need high temperatures in the range of 25-35℃. They love to bask in direct sunlight where temperature can climb up to 50℃. Night time temperatures can drop to 20℃.
@@ -116,13 +92,11 @@
 		</div>
 	</section>
 
-	
-
 	<section class="bg-gray">
 		<header class="page-name">Diet</header>
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\Pix reptiles\beardeddragon\DragonCage1.jpg" alt="">
+				<img src="images-watermark/bearded-dragons/DragonCage1.jpg" alt="bearded dragon habitat">
 			</div>
 			<div class="content">
 				<p>They are not picky eaters and will consume every living insect, worm, maggot, etc. they can get. Once used to the keeper, they accept food from tweezers, which makes it possible to feed defrosted insects as well.</p>
@@ -136,44 +110,6 @@
 		</div>
 	</section>
 
-	<footer>
-		<div class="footer-container">
-			<div class="footer-section --footer-main">
-				<div class="logo-name">
-					<img src="Icons/JJ logo final.png" alt="Logo" class="logo">
-					<h2 class="brand-name">JungleJewels</h3>
-				</div>
-				<p>
-					For more than 30 years keeping and breeding of exotic animals has been our passion. Located in Leyte, Philippines, we take full advantage of the local climate and keep our reptiles and birds outdoor all year round, where they enjoy natural sun light and seasonal changes of temperature and rainfall.
-			</div>
-			<div class="footer-section --footer-browse">
-				<h3>Browse</h3>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<!-- <li><a href="">About Us</a></li> -->
-					<li><a href="contact.html">Contact</a></li>
-					<!-- <li><a href="">News</a></li> -->
-				</ul>
-			</div>
-			<div class="footer-section --footer-animals">
-				<h3>Animals</h3>
-				<ul>
-					<li><a href="chameleons.html">Chameleons</a></li>
-					<li><a href="bearded_dragons.html">Bearded Dragons</a></li>
-					<li><a href="frogs.html">Frogs</a></li>
-					<li><a href="birds.html">Gouldian Finches</a></li>
-					<li><a href="rainbow loris.html">Rainbow Loris</a></li>
-				</ul>
-			</div>
-			<div class="footer-section --footer-contacts ">
-				<h3>Contact</h3>
-				<div class="footer-contacts-icon"><img src="Icons/Facebook_Icon.svg" alt=""> <a style="font-family: 'Roboto'; margin-left:.5rem; font-size: .9rem;" href="https://www.facebook.com/jj.poisonfrogger" target=”_blank”>JJtim</a></div>
-				<div class="footer-contacts-icon"><img src="Icons/Email_Icon.svg" alt=""> <p>junglejewelsfarm@gmail.com</p></div>
-			</div>
-		</div>
-		<div class="copyright"> <p class="left">@Copyright 2023</p>	<p class="right">Privacy Policy</p></div>
-	</footer>
-	<script src="app.js"></script>
-	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
+	<div id="footer-placeholder"></div>
 </body>
 </html>

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Frogs</title>
-	<link rel="shortcut icon" href="Icons/JJ logo final.png" type="image/png">
+	<link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/form.css">
@@ -15,6 +15,18 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<script src="app.js"></script>
+	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+		$.get("components/nav.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+		});
+		$.get("components/footer.html", function(data){
+				$("#footer-placeholder").replaceWith(data);
+		});
+		</script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"></script>
@@ -26,48 +38,15 @@
   gtag('config', 'G-NM7HXFJTE7');
 </script>
 <body>
-	<div class="nav-container">
-		<nav class="nav-bar">
-			
-			<div id="navbar-logo">
-				<img src="Icons\JJ logo final.png" alt="Logo" class="logo">
-				<h2 class="brand-name">Jungel Jewels</h2>
-			</div>
 
-			<div class="menu-toggle" id="mobile-menu">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-
-			<ul class="nav-menu" id="nav-menu">
-				<li><a href="index.html" class="nav-links">Home</a></li>
-				<li class="dropdown-container">
-					<div class="dropdown">
-						<div class="dropbtn nav-links">Animals
-							<i class="fa-solid fa-chevron-right"></i>
-						</div>
-						<div class="dropdown-content">
-							<a class="nav-links" href="chameleons.html">Chameleons</a>
-							<a class="nav-links" href="bearded_dragons.html">Bearded Dragons</a>
-							<a class="nav-links" href="frogs.html">Frogs</a>
-							<a class="nav-links" href="birds.html">Gouldian Finches</a>
-							<a class="nav-links" href="rainbow loris.html">Rainbow Loris</a>
-						</div>
-					</div></li>
-				<!-- <li><a href="#" class="nav-links">News</a></li> -->
-				<li><a href="contact.html" class="nav-links">Contact</a></li>
-			</ul>
-
-		</nav>
-	</div>
+	<div id="nav-placeholder"></div>
 
 	<header class="--center-text">Poison Dart Frogs</header>
 
 	<section class="bg-white">
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\pix frogs\3.jpg" alt="">
+				<img src="images-watermark/frogs/3.jpg" alt="">
 			</div>
 			<div class="content --content-center">
 				<p>Poison dart frogs (PDF) or sometimes just called "darts" are a group of frogs inhabiting rainforests of Central and South America. From Nicaragua in the North to Bolivia in the South, they can be found in tropical lowland and highland rainforests, from forest grounds all the way to the canopy. A few species even utilize man made habitats, such as banana and cacao plantations. 
@@ -79,10 +58,10 @@
 	<section class="bg-white">
 		<div class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\pix frogs\1.jpg" alt="">
+				<img src="images-watermark/frogs/1.jpg" alt="poison dart frog">
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\pix frogs\2.jpg" alt="">
+				<img src="images-watermark/frogs/2.jpg" alt="poison dart frog">
 			</div>
 		</div>
 	</section>
@@ -93,8 +72,8 @@
 				<p>Their size varies from 12mm (e.g. Ranitomeya reticulata)  up to 50mm (e.g. some Dendrobates tinctorius variants). </p>
 			</div>
 			<div class="overlap-grid">
-				<img class="overlap-1" src="Wojtek Homepage\pix frogs\4.jpg" alt="">
-				<img class="overlap-2" src="Wojtek Homepage\pix frogs\5.jpg" alt="">
+				<img class="overlap-1" src="images-watermark/frogs/4.jpg" alt="poison dart frog">
+				<img class="overlap-2" src="images-watermark/frogs/5.jpg" alt="poison dart frog">
 			</div>
 		</div>
 	</section>
@@ -102,8 +81,8 @@
 	<section class="bg-green">
 		<div class="split">
 			<div class="overlap-grid">
-				<img class="overlap-3" src="Wojtek Homepage\pix frogs\6.jpg" alt="">
-				<img class="overlap-4" src="Wojtek Homepage\pix frogs\7.jpg" alt="">
+				<img class="overlap-3" src="images-watermark/frogs/6.jpg" alt="poison dart frog">
+				<img class="overlap-4" src="images-watermark/frogs/7.jpg" alt="poison dart frog">
 			</div>
 			<div class="content --content-center --white-text">
 				<p>These diurnal animals spend most of their day foraging in leave litter, where they look for springtails, isopodes, mites, ants, spiders, and many more. Their most active periods are mornings and afternoons.</p>
@@ -125,17 +104,17 @@
 			
 			<div class="flex-placeholder">
 				<div	class="split">
-					<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\8.jpg" alt="">
+					<div class="flex-placeholder"><img src="images-watermark/frogs/8.jpg" alt="poison dart frog">
 						
 					</div>
-					<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\9.jpg" alt=""></div>
+					<div class="flex-placeholder"><img src="images-watermark/frogs/9.jpg" alt="poison dart frog"></div>
 				</div>
 			</div>
 			
 		</div>
 	</section>
 
-	<section class="bg-white">
+	<section class="bg-gray">
 		<div class="split">
 			<div class="content --content-center">
 				<div>
@@ -149,10 +128,10 @@
 
 			<div class="flex-placeholder">
 				<div	class="split">
-					<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\10.jpg" alt="">
+					<div class="flex-placeholder"><img src="images-watermark/frogs/10.jpg" alt="poison dart frog">
 						
 					</div>
-					<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\11.jpg" alt=""></div>
+					<div class="flex-placeholder"><img src="images-watermark/frogs/11.jpg" alt="poison dart frog"></div>
 				</div>
 			</div>
 			
@@ -171,10 +150,10 @@
 
 			<div class="flex-placeholder">
 				<div	class="split">
-					<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\12.jpg" alt="">
+					<div class="flex-placeholder"><img src="images-watermark/frogs/12.jpg" alt="developing frog">
 						
 					</div>
-					<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\13.jpg" alt=""></div>
+					<div class="flex-placeholder"><img src="images-watermark/frogs/13.jpg" alt="developing frog"></div>
 				</div>
 			</div>
 			
@@ -193,17 +172,17 @@
 		</div>
 
 		<div class="split --image-line">
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\14.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\15.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\16.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\17.jpg" alt=""></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/14.jpg" alt="frog habitat"></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/15.jpg" alt="frog habitat"></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/16.jpg" alt="frog habitat"></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/17.jpg" alt="frog habitat"></div>
 		</div>
 
 		<div class="split --image-line">
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\cage-1.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\cage-2.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\cage-3.jpg" alt=""></div>
-			<div class="flex-placeholder"><img src="Wojtek Homepage\pix frogs\cage-4.jpg" alt=""></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/cage-1.jpg" alt="frog habitat"></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/cage-2.jpg" alt="frog habitat"></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/cage-3.jpg" alt="frog habitat"></div>
+			<div class="flex-placeholder"><img src="images-watermark/frogs/cage-4.jpg" alt="frog habitat"></div>
 		</div>
 	</section>
 
@@ -220,13 +199,13 @@
 	<section class="bg-white">
 		<div	class="split">
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\pix frogs\cage-spray.jpg" alt="">
+				<img src="images-watermark/frogs/cage-spray.jpg" alt="habitat sprinkler">
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\pix frogs\cage-spray2.jpg" alt="">
+				<img src="images-watermark/frogs/cage-spray2.jpg" alt="habitat sprinkler">
 			</div>
 			<div class="flex-placeholder">
-				<img src="Wojtek Homepage\pix frogs\cage-door.jpg" alt="">
+				<img src="images-watermark/frogs/cage-door.jpg" alt="tank screen">
 			</div>
 		</div>
 	</section>
@@ -234,8 +213,8 @@
 	<section class="bg-green">
 		<div class="split">
 			<div class="overlap-grid">
-				<img class="overlap-3" src="\Wojtek Homepage\pix frogs\22.jpg" alt="">
-				<img class="overlap-4" src="\Wojtek Homepage\pix frogs\21.jpg" alt="">
+				<img class="overlap-3" src="images-watermark/frogs/22.jpg" alt="poison dart frog">
+				<img class="overlap-4" src="images-watermark/frogs/21.jpg" alt="poison dart frog">
 			</div>
 			<div class="content --white-text">
 				<p>If you are prepared to do whatever is necessary, you're in for big rewards.
@@ -257,51 +236,12 @@
 					<h4>Please inform yourself about the conditions these animals need and be sure you are able to provide them… BEFORE getting some frogs.</h4>
 			</div>
 			<div class="overlap-grid">
-				<img class="overlap-1" src="Wojtek Homepage\pix frogs\Fruit flies2.jpg" alt="">
-				<img class="overlap-2" src="Wojtek Homepage\pix frogs\Fruit flies1.jpg" alt="">
+				<img class="overlap-1" src="images-watermark/frogs/Fruit-flies2.jpg" alt="fruit flies">
+				<img class="overlap-2" src="images-watermark/frogs/Fruit-flies1.jpg" alt="fruit flies">
 			</div>
 		</div>
 	</section>
 
-	<footer>
-
-		<div class="footer-container">
-			<div class="footer-section --footer-main">
-				<div class="logo-name">
-					<img src="Icons/JJ logo final.png" alt="Logo" class="logo">
-					<h2 class="brand-name">JungleJewels</h3>
-				</div>
-				<p>
-					For more than 30 years keeping and breeding of exotic animals has been our passion. Located in Leyte, Philippines, we take full advantage of the local climate and keep our reptiles and birds outdoor all year round, where they enjoy natural sun light and seasonal changes of temperature and rainfall.
-			</div>
-			<div class="footer-section --footer-browse">
-				<h3>Browse</h3>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<!-- <li><a href="">About Us</a></li> -->
-					<li><a href="contact.html">Contact</a></li>
-					<!-- <li><a href="">News</a></li> -->
-				</ul>
-			</div>
-			<div class="footer-section --footer-animals">
-				<h3>Animals</h3>
-				<ul>
-					<li><a href="chameleons.html">Chameleons</a></li>
-					<li><a href="bearded_dragons.html">Bearded Dragons</a></li>
-					<li><a href="frogs.html">Frogs</a></li>
-					<li><a href="birds.html">Gouldian Finches</a></li>
-					<li><a href="rainbow loris.html">Rainbow Loris</a></li>
-				</ul>
-			</div>
-			<div class="footer-section --footer-contacts ">
-				<h3>Contact</h3>
-				<div class="footer-contacts-icon"><img src="Icons/Facebook_Icon.svg" alt=""> <a style="font-family: 'Roboto'; margin-left:.5rem; font-size: .9rem;" href="https://www.facebook.com/jj.poisonfrogger" target=”_blank”>JJtim</a></div>
-				<div class="footer-contacts-icon"><img src="Icons/Email_Icon.svg" alt=""> <p>junglejewelsfarm@gmail.com</p></div>
-			</div>
-		</div>
-		<div class="copyright"> <p class="left">@Copyright 2023</p>	<p class="right">Privacy Policy</p></div>
-	</footer>
-	<script src="app.js"></script>
-	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
+	<div id="footer-placeholder"></div>
 </body>
 </html>

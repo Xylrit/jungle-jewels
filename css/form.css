@@ -34,7 +34,7 @@
 
 @media screen and (max-width:820px){
 	.contact-image{
-		content: url("../background images/N_0072.jpg");
+		content: url("../background-images/contact-image-mobile.jpg");
 		height: 25vh;
 		width: 100%;
 		object-fit:cover;
@@ -64,8 +64,12 @@ input, textarea{
 	font-size: 15px;
 }
 
-input{
-	padding: 5px;
+input,textarea{
+	margin-top: .5em;
+	padding: .8em;
+}
+input:focus,textarea:focus{
+	outline: none;
 }
 
 .send-email-btn{
@@ -78,4 +82,13 @@ input{
 	justify-self: center;
   width: 100%;
   max-width: 280px;
+	transition: all ease .2s;
+}
+
+.send-email-btn:hover{
+	color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: all ease .2s;
 }

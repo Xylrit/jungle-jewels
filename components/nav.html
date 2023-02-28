@@ -1,0 +1,70 @@
+<div class="nav-container">
+	<nav class="nav-bar">
+		<div id="navbar-logo">
+			<img src="Icons/jj-logo.png" alt="Logo" class="logo">
+			<h2 class="brand-name">Jungel Jewels</h2>
+		</div>
+
+		<div class="menu-toggle" id="mobile-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+
+		<ul class="nav-menu" id="nav-menu">
+			<li><a href="index.html" class="nav-links">Home</a></li>
+			<li class="dropdown-container">
+				<div class="dropdown">
+					<div class="dropbtn nav-links">Animals
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>
+					<div class="dropdown-content">
+						<a class="nav-links" href="chameleons.html">Chameleons</a>
+						<a class="nav-links" href="bearded_dragons.html">Bearded Dragons</a>
+						<a class="nav-links" href="frogs.html">Frogs</a>
+						<a class="nav-links" href="birds.html">Gouldian Finches</a>
+						<a class="nav-links" href="rainbow loris.html">Rainbow Loris</a>
+					</div>
+				</div></li>
+			<!-- <li><a href="#" class="nav-links">News</a></li> -->
+			<li><a href="contact.html" class="nav-links">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+<script>
+	const menu = document.querySelector("#mobile-menu");
+const menuLinks = document.querySelector('.nav-menu');
+
+menu.addEventListener("click", function(){
+	menu.classList.toggle('is-active');
+	menuLinks.classList.toggle('active');
+})
+
+const nav = document.querySelector(".nav-container");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+	if (lastScrollY < window.scrollY) {
+		nav.classList.add("nav--hidden");
+	}
+	else{
+		nav.classList.remove("nav--hidden");
+	}
+
+	lastScrollY = window.scrollY;
+});
+
+const dropbtn = document.querySelector('.dropbtn')
+const dropdownContent = document.querySelector('.dropdown-content')
+const dropdownContainer = document.querySelector('.dropdown-container')
+
+dropbtn.addEventListener("click", function(){
+	dropdownContent.classList.toggle('is-active');
+	dropdownContainer.classList.toggle('is-active');
+})
+
+document.getElementById("inquireBtn").onclick = function () {
+	location.href = "contact.html";
+}
+
+</script>

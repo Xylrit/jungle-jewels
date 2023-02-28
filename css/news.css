@@ -1,0 +1,57 @@
+
+header{
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Cormorant Garamond', sans-serif;
+	display: block;
+	padding: .8em 0;
+	font-weight: 700;
+}
+
+
+.main-grid{
+	background-color: var(--accentGreen);
+	margin-bottom: 5em;
+	display: grid;
+	padding: 1em;
+}
+
+.news{
+	margin: 0 1em;
+	justify-self: center;
+	align-self: center;
+	font-family: 'Cormorant Garamond', sans-serif;
+	background-color: white;
+	max-width: 39em;
+}
+
+@media screen and (max-width:768px){
+	.news{
+		max-width: 20em;
+	}
+	
+}
+
+.image-line{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.news-image img{
+	object-fit: cover;
+	height: 100%;
+	max-width: 100%;
+}
+
+.news-header{
+	margin: 1em;
+}
+.title{
+	font-size: 1em;
+	
+}
+
+.date{
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}

@@ -167,15 +167,19 @@ section{
 	font-size: 3.5rem;
 }
 
-.image-container img{
+.image-container img, .image-container-frog img{
 	object-fit: cover;
-	max-width: 100%;
+	max-width: 50em;
 	border-radius: 8px;
 }
 
 .image-container{
 	overflow: hidden;
 	flex-basis: 100%;
+}
+
+.image-container-frog{
+	margin-inline: auto;
 }
 
 .about-us-info-container{
