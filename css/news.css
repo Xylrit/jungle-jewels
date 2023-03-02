@@ -33,7 +33,6 @@ header{
 	font-family: 'Cormorant Garamond', sans-serif;
 	background-color: white;
 	max-width: 30em;
-	flex: 1 0 400px;
 	display: flex;
 	flex-direction: column;
 }
