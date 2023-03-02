@@ -169,7 +169,7 @@ section{
 
 .image-container img, .image-container-frog img{
 	object-fit: cover;
-	max-width: 50em;
+	max-width: 100%;
 	border-radius: 8px;
 }
 
