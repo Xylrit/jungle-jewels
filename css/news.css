@@ -9,6 +9,7 @@ body{
 }
 
 header{
+	color: var(--accentGray);
 	text-align: center;
 	font-size: 3rem;
 	font-family: 'Cormorant Garamond', sans-serif;
@@ -18,25 +19,32 @@ header{
 }
 
 
-.main-grid{
+.main-flexbox{
 	background-color: var(--accentGreen);
 	margin-bottom: 5em;
-	display: grid;
+	display: flex;
 	padding: 1em;
+	justify-content: center;
+	align-items: center;
 }
 
 .news{
 	margin: 0 1em;
-	justify-self: center;
-	align-self: center;
 	font-family: 'Cormorant Garamond', sans-serif;
 	background-color: white;
-	max-width: 39em;
+	max-width: 30em;
+	flex: 1 0 400px;
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (max-width:768px){
 	.news{
 		max-width: 20em;
+	}
+	.main-flexbox{
+		gap: 2em;
+		flex-direction: column;
 	}
 	
 }
@@ -46,18 +54,38 @@ header{
 	grid-template-columns: 2fr 1fr;
 }
 
+.multiple-images{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
 .news-image img{
 	object-fit: cover;
 	height: 100%;
 	max-width: 100%;
 }
-
 .news-header{
 	margin: 1em;
 }
 .title{
 	font-size: 1em;
-	
+}
+
+.title a{
+	font-size: 1.2em;
+	color: green;
+}
+.title a:link {
+  text-decoration:underline;
+}
+
+.title a:visited {
+  text-decoration: none;
+}
+
+
+.title a:active {
+  text-decoration: underline;
 }
 
 .date{
