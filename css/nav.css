@@ -40,8 +40,8 @@
 		}
 	}
 	.dropbtn{
+		line-height: 60px;
 		text-decoration: none;
-		font-size: 21px;
 		color: var(--accentGray);
 		font-size: clamp(1.125rem, 0.8906rem + 0.75vw, 1.3125rem);
 	}
@@ -89,12 +89,22 @@
 	}
 
 	.nav-links{
+		line-height: 60px;
 		text-decoration: none;
-		font-size: 21px;
 		color: var(--accentGray);
 		font-size: clamp(1.125rem, 0.8906rem + 0.75vw, 1.3125rem);
-
 	}
+
+	.dropdown-nav-links{
+		color: var(--accentGray);
+		font-size: clamp(1.125rem, 0.8906rem + 0.75vw, 1.3125rem);
+	}
+
+	.dropdown-nav-links:hover{
+		background-color: lightgrey;
+		transition: all 0.4s ease-out;
+	}
+
 	.menu-toggle .bar{
 		width: 25px;
 		height: 3px;
@@ -140,6 +150,18 @@
 		}
 
 		.nav-links:hover{
+			background-color: lightgrey;
+			transition: all 0.4s ease-out;
+		}
+
+		.dropdown-nav-links{
+			text-align: center;
+			line-height: 60px;
+			width: 100%;
+			display: table;
+		}
+
+		.dropdown-nav-links:hover{
 			background-color: lightgrey;
 			transition: all 0.4s ease-out;
 		}
