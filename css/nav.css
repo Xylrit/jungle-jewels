@@ -23,13 +23,6 @@
 		font-size: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
 	}
 
-	@media (hover:hover){
-		.dropdown-content a:hover{
-			background-color: lightgray;
-			transition: all ease .5s;
-		}
-	}
-
 	/* Dropdown Queries */
 	@media screen and (min-width:820px){
 		.dropdown:hover .dropdown-content {
@@ -45,6 +38,12 @@
 		.dropdown-content a {
 			padding: 12px 16px;
 		}
+	}
+	.dropbtn{
+		text-decoration: none;
+		font-size: 21px;
+		color: var(--accentGray);
+		font-size: clamp(1.125rem, 0.8906rem + 0.75vw, 1.3125rem);
 	}
 	.dropdown-content{
 		display: none;
