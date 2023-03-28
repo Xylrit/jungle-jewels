@@ -77,12 +77,6 @@
 	overflow: hidden;
 	max-width: 100%;
 	position: relative;
-	/* background: url('/background images/HeroPage3.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-y: 50%;
-	background-position-x: 0;
-	background-size: 110%; */
 }
 
 .hero-image{
@@ -179,7 +173,12 @@ section{
 }
 
 .image-container-frog{
-	margin-inline: auto;
+	margin-left: 2.15em;
+}
+@media screen and (max-width: 768px) {
+	.image-container-frog{
+		margin-left: 0;
+	}
 }
 
 .about-us-info-container{
