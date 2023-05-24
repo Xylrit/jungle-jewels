@@ -46,9 +46,10 @@
 
 .sub-header-text{
 	color: white;
-	max-width: 400px;
+	max-width: 450px;
 	font-family: 'Cormorant Garamond';
-	font-size: clamp(0.75rem, 0.2813rem + 1.5vw, 1.125rem);
+	font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
+	line-height: 1.25;
 }
 
 .inquire-button{
