@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Looking to get in touch with us at JungleJewelsPH? Our contact page has all the information you need to reach out and connect with our team.">
-	<title>Contact</title>
-	<link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/form.css">
-	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/nav.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Looking to get in touch with us at JungleJewelsPH? Our contact page has all the information you need to reach out and connect with our team."
+    />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<script src="app.js"></script>
-	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
-	<script src="//code.jquery.com/jquery.min.js"></script>
-	<script>
-		$.get("components/nav.html", function(data){
-				$("#nav-placeholder").replaceWith(data);
-		});
-		$.get("components/footer.html", function(data){
-				$("#footer-placeholder").replaceWith(data);
-		});
-		</script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c290729d94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("components/nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+      $.get("components/footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+      });
+    </script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-NM7HXFJTE7');
-</script>
-<body>
-	<div id="nav-placeholder"></div>
+    gtag("config", "G-NM7HXFJTE7");
+  </script>
+  <body>
+    <div id="nav-placeholder"></div>
 
-	<div class="contact-section">
-		<div class="contact-form">
-			<div>
-				<h1 style="margin-bottom: 10px;">Get in touch<span style="color: #39B54A;">.</span></h1>
-				<p style="font-weight:500; font-size: 18px; margin-bottom: 50px;">Interested in owning an exotic animal? Fill up the form and inquire. We’ll get back to you shortly after.</p>
-			</div>
+    <div class="contact-section">
+      <div class="contact-form">
+        <div>
+          <h1 style="margin-bottom: 10px">
+            Get in touch<span style="color: #39b54a">.</span>
+          </h1>
+          <p style="font-weight: 500; font-size: 18px; margin-bottom: 50px">
+            Interested in owning an exotic animal? Fill up the form and inquire.
+            We’ll get back to you shortly after.
+          </p>
+        </div>
 
-			<form class="contact-info" action="https://formsubmit.co/b73cb9f894579652c7170d88a7adc080" method="POST">
-				<!-- Honeypot -->
-				<input type="text" name="_honey" style="display:none;">
+        <form
+          class="contact-info"
+          action="https://formsubmit.co/b73cb9f894579652c7170d88a7adc080"
+          method="POST"
+        >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
 
-				<!-- Disable Captcha -->
-				<input type="hidden" name="_captcha" value="false">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://junglejewelsph.com/success"
+          />
+          <label class="name">
+            Your Name<span style="color: red">*</span>
+            <input type="text" name="name" class="input-name" required />
+          </label>
+          <label class="email">
+            Email<span style="color: red">*</span>
+            <input type="email" name="email" class="input-email" required />
+          </label>
+          <label class="phone">
+            Phone Number(Optional)
+            <input type="tel" name="phone" class="input-number" />
+          </label>
+          <label class="message">
+            How can we help you?<span style="color: red">*</span>
+            <textarea cols="20" rows="5" name="message" required></textarea>
+          </label>
 
-				<input type="hidden" name="_next" value="https://junglejewelsph.com/success">
-				<label class="name">
-					Your Name<span style="color:red;">*</span>
-					<input type="text" name="name" class="input-name" required>
-				</label>
-				<label class="email">
-					Email<span style="color:red;">*</span>
-					<input type="email" name="email" class="input-email" required>
-				</label>
-				<label class="phone">
-					Phone Number(Optional)
-					<input type="tel" name="phone" class="input-number">
-				</label>
-				<label class="message">
-					How can we help you?<span style="color:red;">*</span>
-					<textarea cols="20" rows="5" name="message" required></textarea>
-				</label>
+          <button type="submit" class="send-email-btn">Send Email</button>
+        </form>
+      </div>
 
-			
-				<button type="submit" class="send-email-btn">Send Email</button>
-			
-			</form>
-		
-		</div>	
+      <div class="contact-image-container">
+        <img
+          src="background-images/contact-image-desktop.JPG"
+          alt="frog"
+          class="contact-image"
+        />
+      </div>
+    </div>
 
-		<div class="contact-image-container"> <img src="background-images/contact-image-desktop.JPG" alt="frog" class="contact-image">
-		</div>
-
-	</div>
-
-
-	<div id="footer-placeholder"></div>
-</body>
+    <div id="footer-placeholder"></div>
+  </body>
 </html>
