@@ -1,79 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png">
-	<link rel="stylesheet" href="css/nav.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/news.css">
-	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-	<title>News</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Icons/jj-logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>News</title>
 
-	<script src="app.js"></script>
-	<script src="https://kit.fontawesome.com/c290729d94.js" crossorigin="anonymous"></script>
-	<script src="//code.jquery.com/jquery.min.js"></script>
-	<script>
-		$.get("components/nav.html", function(data){
-				$("#nav-placeholder").replaceWith(data);
-		});
-		$.get("components/footer.html", function(data){
-				$("#footer-placeholder").replaceWith(data);
-		});
-		</script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c290729d94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("components/nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+      $.get("components/footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+      });
+    </script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-NM7HXFJTE7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-NM7HXFJTE7');
-</script>
-<body>
-	<div id="nav-placeholder"></div>
+    gtag("config", "G-NM7HXFJTE7");
+  </script>
+  <body>
+    <div id="nav-placeholder"></div>
 
-	<header>News</header>
-		
-	<div class="main-flexbox">
-		
+    <header>News</header>
 
-		<div class="news">
-			<div class="news-image multiple-images">
-					<img class="bumblebee" src="news-images/Dendrobates-leucomelas,-Bumblebee-Poison-Dart-Frog1.jpg" alt="Bumblebee Poison Dart Frog">
-					<img class="bumblebee" src="news-images/Dendrobates-leucomelas,-Bumblebee-Poison-Dart-Frog2.jpg" alt="Bumblebee Poison Dart Frog">
-					<img class="bumblebee" src="news-images/Dendrobates-leucomelas,-Bumblebee-Poison-Dart-Frog3.jpg" alt="Bumblebee Poison Dart Frog">
-			
-			</div>
-			<div class="news-header">
-				<p class="date">Available stock: Dendrobates leucomelas, Bumblebee Dart Frog. 4-6 months old</p>
-					<p class="title">
-						<a href="contact.html">Contact us</a> for more info
-						</p>
-			</div>	
-		</div>
+    <div class="main-flexbox order-section">
+      <h1 class="title-header">Mode of Order:</h1>
+      <div class="order-info-container">
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">1</span>
+            Upon ordering, the buyer provides full name, address and phone#.
+          </p>
+        </div>
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">2</span>
+            With these data JungleJewels applies for DENR Local Transport
+            Permit.
+          </p>
+        </div>
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">3</span>
+            Once DENR issues the LTP, a soft copy will be sent to the buyer as
+            proof of legitimacy.
+          </p>
+        </div>
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">4 </span> At that point the buyer pays 10%
+            downpayment.
+          </p>
+        </div>
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">5</span>
+            JungleJewels applies for Veterinary health certificate, shipping
+            permit with the Bureau of Quarantine and the Deed of sale.
+          </p>
+        </div>
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">6</span>
+            The remaining balance of 90% must be paid upon personal pickup or
+            before the animals are being shipped.
+          </p>
+        </div>
+        <div class="info-container">
+          <p class="info-text">
+            <span class="info-number">7</span> At that point the buyer pays 10%
+            downpayment.
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<div class="news">
-			<div class="news-image image-line">
-				<img src="news-images/pet-expo-1.jpg" alt="pet expo 2023">
-				<img src="news-images/pet-expo-2.jpg" alt="pet expo 2023">
-			</div>
-			<div class="news-header">
-				<p class="date">February 17-19, 2023</p>
-				<p class="title">JungleJewels at PetExpo SMX Manila</p>
-			</div>
-		</div>
+    <div class="main-flexbox">
+      <div class="news">
+        <div class="news-image multiple-images">
+          <img
+            class="bumblebee"
+            src="news-images/Dendrobates-leucomelas,-Bumblebee-Poison-Dart-Frog1.jpg"
+            alt="Bumblebee Poison Dart Frog"
+          />
+          <img
+            class="bumblebee"
+            src="news-images/Dendrobates-leucomelas,-Bumblebee-Poison-Dart-Frog2.jpg"
+            alt="Bumblebee Poison Dart Frog"
+          />
+          <img
+            class="bumblebee"
+            src="news-images/Dendrobates-leucomelas,-Bumblebee-Poison-Dart-Frog3.jpg"
+            alt="Bumblebee Poison Dart Frog"
+          />
+        </div>
+        <div class="news-header">
+          <p class="date">
+            Available stock: Dendrobates leucomelas, Bumblebee Dart Frog. 4-6
+            months old
+          </p>
+          <p class="title">
+            <a href="contact.html">Contact us</a> for more info
+          </p>
+        </div>
+      </div>
 
-	</div>
+      <div class="news">
+        <div class="news-image image-line">
+          <img src="news-images/pet-expo-1.jpg" alt="pet expo 2023" />
+          <img src="news-images/pet-expo-2.jpg" alt="pet expo 2023" />
+        </div>
+        <div class="news-header">
+          <p class="date">February 17-19, 2023</p>
+          <p class="title">JungleJewels at PetExpo SMX Manila</p>
+        </div>
+      </div>
+    </div>
 
-	<div id="footer-placeholder">
-
-	</div>
-</body>
+    <div id="footer-placeholder"></div>
+  </body>
 </html>

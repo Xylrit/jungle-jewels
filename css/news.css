@@ -1,93 +1,136 @@
-html{
-	height: 100%;
+html {
+  height: 100%;
 }
 
-body{
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-header{
-	color: var(--accentGray);
-	text-align: center;
-	font-size: 3rem;
-	font-family: 'Cormorant Garamond', sans-serif;
-	display: block;
-	padding: .8em 0;
-	font-weight: 700;
+header {
+  color: var(--accentGray);
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", sans-serif;
+  display: block;
+  padding: 0.8em 0;
+  font-weight: 700;
 }
 
-
-.main-flexbox{
-	background-color: var(--accentGreen);
-	margin-bottom: 5em;
-	display: flex;
-	padding: 1em;
-	justify-content: center;
-	align-items: center;
+.main-flexbox {
+  background-color: var(--accentGreen);
+  margin-bottom: 5em;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
-.news{
-	margin: 0 1em;
-	font-family: 'Cormorant Garamond', sans-serif;
-	background-color: white;
-	max-width: 30em;
-	display: flex;
-	flex-direction: column;
+.news {
+  margin: 0 1em;
+  font-family: "Cormorant Garamond", sans-serif;
+  background-color: white;
+  max-width: 30em;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (max-width:768px){
-	.news{
-		max-width: 20em;
-	}
-	.main-flexbox{
-		gap: 2em;
-		flex-direction: column;
-	}
-	
+@media screen and (max-width: 768px) {
+  .news {
+    max-width: 20em;
+  }
+  .main-flexbox {
+    gap: 2em;
+    flex-direction: column;
+  }
 }
 
-.image-line{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
+.image-line {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-.multiple-images{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+.multiple-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.news-image img{
-	object-fit: cover;
-	height: 100%;
-	max-width: 100%;
+.news-image img {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
 }
-.news-header{
-	margin: 1em;
+.news-header {
+  margin: 1em;
 }
-.title{
-	font-size: 1em;
+.title {
+  font-size: 1em;
 }
 
-.title a{
-	font-size: 1.2em;
-	color: green;
+.title a {
+  font-size: 1.2em;
+  color: green;
 }
 .title a:link {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .title a:visited {
   text-decoration: none;
 }
 
-
 .title a:active {
   text-decoration: underline;
 }
 
-.date{
-	font-size: 1.5em;
-	margin-bottom: .5em;
+.date {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.title-header {
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", sans-serif;
+  color: white;
+  margin: 1rem;
+  display: block;
+  text-align: left;
+  font-weight: 700;
+}
+
+.order-info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.order-section {
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info-container {
+  background-color: #3dcf25;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  filter: drop-shadow(#2b881b 1rem 1rem 10px);
+}
+
+.info-number {
+  display: inline-block;
+  width: 1.3rem; /* Adjust the width and height to set the circle size */
+  height: 1.3rem;
+  border-radius: 50%; /* Makes it a circle by using 50% border-radius */
+  background-color: #2b881b; /* Replace with your desired background color */
+  text-align: center; /* Center the content horizontally */
+  line-height: 1.3rem; /* Center the content vertically */
+  color: #fff;
+}
+
+.info-text {
 }
