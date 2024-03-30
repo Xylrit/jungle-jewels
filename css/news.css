@@ -51,6 +51,23 @@ header {
   grid-template-columns: 2fr 1fr;
 }
 
+.two-images {
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+}
+
+.three-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.long-image {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+
 .multiple-images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
