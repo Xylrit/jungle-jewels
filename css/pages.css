@@ -1,152 +1,148 @@
-header{
-	font-size: 3rem;
-	font-family: 'Cormorant Garamond', sans-serif;
-	display: block;
-	padding-top: .5em;
-	font-weight: 700;
+header {
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", sans-serif;
+  display: block;
+  padding-top: 0.5em;
+  font-weight: 700;
 }
 
-.flex-placeholder{
-	flex-basis: 100%;
+.flex-placeholder {
+  flex-basis: 100%;
 }
 
-img{
-	border-radius: 1rem;
+img {
+  border-radius: 1rem;
 }
 
-.--content-center{
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	max-width: 600px;
+.--content-center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
 }
-.--section-header{
-	padding-bottom: .5em;
+.--section-header {
+  padding-bottom: 0.5em;
 }
-.content{
-	display: grid;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Cormorant Garamond';
-	
-}
-
-.content p{
-	font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
-	font-weight: 700;
-	line-height: 1.4;
+.content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond";
 }
 
-.content{
-	flex-basis: 100%;
+.content p {
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.flex-placeholder img{
-	object-fit: cover;
-	max-width: 100%;
+.content {
+  flex-basis: 100%;
 }
 
-.--white-text{
-	color:white;
+.flex-placeholder img {
+  object-fit: cover;
+  max-width: 100%;
 }
 
-.--two-images{
-	display: flex;
-	flex-direction: row
+.--white-text {
+  color: white;
 }
 
-.--image-line{
-	padding-top: 2em;
-	min-height: 9em;
+.--two-images {
+  display: flex;
+  flex-direction: row;
 }
 
-.image-line img{
-	object-fit: cover;
-	max-width: 100%;
-	max-height: 100%;
+.--image-line {
+  padding-top: 2em;
+  min-height: 9em;
 }
 
-.--left-align-text{
-	text-align: left;
+.image-line img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.overlap-grid{
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-
-	/* outline: 2px solid red; */
-	flex-basis: 100%;
-	max-width: 100%;
-	min-height: 400px;
-}
-.overlap-grid img{
-	object-fit: cover;
+.--left-align-text {
+  text-align: left;
 }
 
-.overlap-1{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	grid-column-start:2;
-	grid-column-end: 6;
-	grid-row-start: 1;
-	grid-row-end: 4;
+.overlap-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  /* outline: 2px solid red; */
+  flex-basis: 100%;
+  max-width: 100%;
+  min-height: 280px;
+}
+.overlap-grid img {
+  object-fit: cover;
 }
 
-.overlap-2{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	grid-column-start:1;
-	grid-column-end: 4;
-	grid-row-start: 3;
-	grid-row-end: 5;
+.overlap-1 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
-.overlap-3{
-	object-fit: cover;
-	width: 100%;
-	min-height: 100%;
-	object-position: 90%;
-	grid-column-start:1;
-	grid-column-end: 5;
-	grid-row-start: 1;
-	grid-row-end: 4;
+.overlap-2 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
-.overlap-4{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	grid-column-start:3;
-	grid-column-end: 6;
-	grid-row-start: 3;
-	grid-row-end: 5;
+.overlap-3 {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  object-position: 90%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
-.four-flex-layout{
-	display: flex;
-	flex-wrap: wrap;
-	
-}
-.four-flex-layout > div{
-	flex: 50%;
-	padding: 1em;
-}
-
-@media screen and (width<768px){
-	.four-flex-layout{
-		flex-direction: column;
-	}
-	
+.overlap-4 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
-.long-image{
-	max-height: 110vh;
-
+.four-flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.four-flex-layout > div {
+  flex: 50%;
+  padding: 1em;
 }
 
-.long-image img{
-	height: 100%;
+@media screen and (width<768px) {
+  .four-flex-layout {
+    flex-direction: column;
+  }
+}
+
+.long-image {
+  max-height: 110vh;
+}
+
+.long-image img {
+  height: 100%;
 }
