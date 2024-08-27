@@ -73,6 +73,11 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.two-stacked-images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 .news-image img {
   object-fit: cover;
   height: 100%;
